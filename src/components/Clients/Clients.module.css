@@ -34,7 +34,7 @@
     display: flex;
     gap: var(--spacing-xl);
     flex-shrink: 0;
-    animation: marquee 25s linear infinite;
+    animation: marquee 15s linear infinite;
 }
 
 .marqueeContent.paused {
