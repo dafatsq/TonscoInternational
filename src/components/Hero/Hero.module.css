@@ -117,4 +117,14 @@
         flex-direction: column;
         width: 100%;
     }
+    
+    .heroScroll {
+        display: none;
+    }
+}
+
+@media (max-height: 700px) {
+    .heroScroll {
+        display: none;
+    }
 }
