@@ -27,6 +27,8 @@ export default function Hero() {
               height={180}
               className={styles.logoImage}
               style={{ filter: 'brightness(0) invert(1)' }}
+              quality={100}
+              unoptimized
             />
           </div>
           <h1 className={`${styles.heroTitle} animate-fade-in`}>

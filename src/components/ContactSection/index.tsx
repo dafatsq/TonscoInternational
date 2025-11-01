@@ -38,9 +38,9 @@ export default function ContactSection() {
               </div>
               <h3>Head Office</h3>
               <p>
-                Bona Business Centre 1st Floor<br />
-                Jl. Lingkar Luar Barat Kav. 35-37<br />
-                Jakarta Selatan 12520<br />
+                Jl. Karang Tengah Raya No.8J 7, RT.7/RW.6<br />
+                Lb. Bulus, Kec. Cilandak<br />
+                Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12440<br />
                 Indonesia
               </p>
             </div>

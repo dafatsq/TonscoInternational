@@ -156,7 +156,10 @@ export default function Clients() {
             ref={marqueeContentRef}
           >
             {[...clientLogos, ...clientLogos].map((logo, index) => (
-              <div key={index} className={styles.clientLogo}>
+              <div 
+                key={index} 
+                className={`${styles.clientLogo} ${logo === 'talismanenergy.png' ? styles.talismanLogo : ''}`}
+              >
                 <img
                   src={`/partnerlogo/${logo}`}
                   alt={`Partner ${index + 1}`}
