@@ -1,0 +1,121 @@
+.about {
+    padding: var(--spacing-3xl) 0;
+    background-color: var(--color-background);
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: start;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.leadText {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+.aboutStats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-xl);
+    background: white;
+    border-radius: var(--border-radius-lg);
+}
+
+.statItem {
+    text-align: center;
+}
+
+.statNumber {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: var(--spacing-xs);
+}
+
+.statLabel {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.aboutFeatures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.featureCard {
+    padding: var(--spacing-lg);
+    background-color: white;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.featureCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.featureIcon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    border-radius: var(--border-radius-md);
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.featureCard h3 {
+    font-size: 1.125rem;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-xs);
+}
+
+.featureCard p {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .aboutGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .aboutFeatures {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutStats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+        margin: var(--spacing-xs) 0;
+        padding: var(--spacing-md);
+    }
+    
+    .statNumber {
+        font-size: 2.5rem;
+    }
+}

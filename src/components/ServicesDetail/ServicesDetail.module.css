@@ -1,0 +1,140 @@
+.servicesDetail {
+    padding: var(--spacing-3xl) 0;
+    background-color: var(--color-background);
+}
+
+.serviceDetailCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+    margin-bottom: var(--spacing-3xl);
+    padding-bottom: var(--spacing-3xl);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.serviceDetailCard:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.serviceDetailCard.reverse {
+    direction: rtl;
+}
+
+.serviceDetailCard.reverse > * {
+    direction: ltr;
+}
+
+.serviceDetailMedia {
+    position: relative;
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    height: 450px;
+}
+
+.serviceDetailMedia img {
+    width: 100%;
+    height: 100%;
+    transition: transform var(--transition-slow);
+}
+
+.serviceDetailCard:hover .serviceDetailMedia img {
+    transform: scale(1.05);
+}
+
+.serviceDetailContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.serviceBadge {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-background-alt);
+    color: var(--color-primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: var(--border-radius-md);
+}
+
+.serviceDetailContent h2 {
+    font-size: 2.25rem;
+    color: var(--color-dark);
+    margin: 0;
+}
+
+.serviceDetailContent .lead {
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+}
+
+.serviceFeatures {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+.featureItem {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+}
+
+.featureItem i {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.featureItem h4 {
+    font-size: 1.125rem;
+    color: var(--color-dark);
+    margin-bottom: 0.25rem;
+}
+
+.featureItem p {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .serviceDetailCard,
+    .serviceDetailCard.reverse {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        direction: ltr;
+    }
+    
+    .serviceDetailContent h2 {
+        font-size: 1.875rem;
+    }
+    
+    .serviceDetailMedia {
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .serviceDetailContent h2 {
+        font-size: 1.5rem;
+    }
+    
+    .serviceDetailContent .lead {
+        font-size: 1rem;
+    }
+    
+    .serviceDetailMedia {
+        height: 250px;
+    }
+}

@@ -1,0 +1,190 @@
+.contactSection {
+    padding: var(--spacing-3xl) 0;
+    background-color: var(--color-background);
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: start;
+}
+
+/* Contact Form */
+.contactFormWrapper {
+    background-color: white;
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.whatsappContact {
+    text-align: center;
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: var(--border-radius-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.whatsappIcon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    border-radius: 50%;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.whatsappContact h3 {
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.whatsappContact p {
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-xl);
+}
+
+.contactAlternatives {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background-color: var(--color-background-alt);
+    border-radius: var(--border-radius-md);
+    text-align: center;
+}
+
+.contactAlternatives p {
+    margin: var(--spacing-xs) 0;
+    color: var(--color-text);
+}
+
+.contactAlternatives a {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.contactAlternatives a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Info */
+.contactInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contactCard {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.contactCard:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.contactCardIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    border-radius: var(--border-radius-md);
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.contactCard h3 {
+    font-size: 1.125rem;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-xs);
+}
+
+.contactCard p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+}
+
+.contactCard a {
+    color: var(--color-primary);
+    transition: color var(--transition-base);
+}
+
+.contactCard a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .contactGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .contactFormWrapper {
+        padding: var(--spacing-lg);
+    }
+    
+    .whatsappContact {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+    
+    .whatsappIcon {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+    
+    .whatsappContact h3 {
+        font-size: 1.25rem;
+    }
+    
+    .whatsappContact p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contactSection {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .contactFormWrapper {
+        padding: var(--spacing-md);
+    }
+    
+    .contactCard {
+        padding: var(--spacing-md);
+    }
+    
+    .whatsappContact {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+    
+    .whatsappIcon {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+    
+    .whatsappContact h3 {
+        font-size: 1.125rem;
+    }
+    
+    .contactAlternatives {
+        padding: var(--spacing-md);
+        font-size: 0.9375rem;
+    }
+}

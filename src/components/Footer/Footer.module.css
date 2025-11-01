@@ -1,0 +1,108 @@
+.footer {
+    background-color: var(--color-dark);
+    color: white;
+    padding: var(--spacing-3xl) 0 var(--spacing-lg);
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.footerLogo {
+    height: 50px;
+    width: auto;
+    margin-bottom: var(--spacing-md);
+    filter: brightness(0) invert(1);
+}
+
+.footerDescription {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.footerColumn h3 {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.footerLinks a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all var(--transition-base);
+}
+
+.footerLinks a:hover {
+    color: white;
+    padding-left: var(--spacing-xs);
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contactItem {
+    display: flex;
+    gap: var(--spacing-md);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contactItem i {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+}
+
+.contactItem strong {
+    color: white;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footerBottomLinks {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.footerBottomLinks a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-base);
+}
+
+.footerBottomLinks a:hover {
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .footerGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 600px) {
+    .footerBottom {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+}

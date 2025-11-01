@@ -1,0 +1,25 @@
+.mapSection {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.mapContainer {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.mapContainer iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 600px) {
+    .mapContainer {
+        height: 300px;
+    }
+}
